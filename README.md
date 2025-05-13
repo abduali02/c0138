@@ -19,8 +19,6 @@ Before running the scripts, ensure you have Python installed along with the foll
 You can generally install these using pip:
 `pip install torch torchvision pydicom SimpleITK numpy scikit-learn TotalSegmentator imageio scipy`
 
-Refer to `Appendix 4: Code` within the main project document (available in the repository) for specific versions if issues arise or for detailed setup.
-
 ## Phase 1: 2D CNN Classifier for Brown Fat Presence Detection
 
 This phase uses a ResNet-50 based 2D Convolutional Neural Network (CNN) to classify PET Maximum-Intensity Projection (MIP) images for the presence of brown fat.
@@ -29,7 +27,7 @@ This phase uses a ResNet-50 based 2D Convolutional Neural Network (CNN) to class
 1.  **Download the Project**:
     * Clone or download the entire project from [https://github.com/abduali02/c0138/](https://github.com/abduali02/c0138/). This includes the necessary scripts and example data.
 2.  **Locate Data**:
-    * The example PET MIP images (DICOM files) are typically located within the downloaded repository (e.g., in the `dataset/dicoms/` subdirectory).
+    * The example PET MIP images (DICOM files) should be located within the downloaded repository (e.g., in the `dataset/dicoms/` subdirectory).
     * The corresponding CSV file mapping filenames to brown fat presence labels (e.g., `dataset/labels.csv`) is also included. A test CSV (e.g., `dataset/labels_test.csv`) is used for evaluation.
 3.  **Run the Classifier Script**:
     * The script for this phase is `2D Brown fat classifier - Phase 1`.
